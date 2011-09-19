@@ -1,0 +1,10 @@
+<h1> Dashboard </h1>
+<p> 
+  Welcome, user. We will try and display your email below:<br/>
+  <% if current_user %>
+    <%= current_user.email %>, and you have clicked <%= current_user.click_count %> times.
+  <% else %>
+    You are not logged in
+  <% end %>
+</p>
+
